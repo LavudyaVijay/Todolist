@@ -1,0 +1,88 @@
+body{
+    
+    font-family: sans-serif;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    font-size: 25px;
+    border:1px solid lightblue;
+    }
+
+label{
+    font-size: 25px;
+    color:#757575;
+    text-decoration: none;
+}
+div{
+    color:black;
+}
+div:hover{
+    color:red;
+}
+br{
+    color:#757575;
+}
+.line1{
+    text-align: center;
+}
+input[type="checkbox"]:checked+label{
+    text-decoration: line-through;
+}
+.inline{
+    display:flex;
+   /* text-align: center;*/
+    justify-content: center;
+    background-color: #c5e1a582;
+    padding-top: 20px;
+    padding-bottom:20px ;
+    justify-content: space-around;
+}
+.inline2{
+    padding-right: 120px;
+}
+
+@media(min-width:668px){
+    input[type=text], input[type=password] {
+        width: 96%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        
+        border:1px solid lightblue;
+        }  
+        .inline2{
+            padding-right: 350px;
+        }  
+    
+}
+
+@media(min-width:992px){
+    input[type=text], input[type=password] {
+        width: 97%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        
+        border:1px solid lightblue;
+        }    
+    .imp{
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    .inline2{
+        padding-right: 750px;
+    }  
+    
+}
+
+.highlight {
+    color: red;
+    background-color: yellow;
+}

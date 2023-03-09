@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head> 
+<body>
+<div classs="imp">
+    <div class="line1"><h1>Thinks to do</h1></div>
+    <div class="input-grp"><input type="text" class="form-control" id="candidate" placeholder="Add New Line"></div>
+    <div id="dynamic-list" class="common-class"></div>
+    
+    <div class="inline">
+        <div class="inline1"><button onclick="add()" ><div class="sym" type="button"><i class="fa fa-plus" aria-hidden="true"></i> </div></button></div>
+        <div class="inline2"><button onclick="search()" id="option-all"><div class="icon" type="button"><i class="fa fa-search-plus" aria-hidden="true"></i></div></button></div>
+
+        <div class="count" onclick="count()">count</div>
+        <div class="sec-all" onclick="actCmp()">All</div>
+        <div class="active"  onclick="active()">Active</div>
+        <div class="complete" id="remove-btn" onclick="completed(),highlight(this.element)">Completed</div>
+    </div>
+    <div>
+        <ul id="characterList"></ul>
+    </div>
+</div>
+
+    <script src="imp.js"></script>
+
+</body>
+</html>  
